@@ -8,7 +8,6 @@ import dayjs from 'dayjs'
 
 function authenticateAndRedirect(): string {
   const { userId } = auth()
-  console.log('userId', userId)
   if (!userId) {
     redirect('/')
   }
@@ -19,7 +18,6 @@ function authenticateAndRedirect(): string {
 export async function createJobAction(
   values: CreateAndEditJobType
 ): Promise<JobType | null> {
-  await new Promise((resolve) => setTimeout(resolve, 3000))
   const userId = authenticateAndRedirect()
 
   try {
@@ -32,7 +30,6 @@ export async function createJobAction(
     })
     return job
   } catch (error) {
-    console.log(error)
     return null
   }
 }

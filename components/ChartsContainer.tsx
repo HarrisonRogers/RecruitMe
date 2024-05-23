@@ -14,8 +14,13 @@ import { useQuery } from '@tanstack/react-query'
 import { getChartsDataAction } from '@/utils/actions'
 import { useTheme } from 'next-themes'
 
+type ChartData = {
+  date: string
+  count: number
+}
+
 const ChartsContainer = () => {
-  const { data, isPending } = useQuery({
+  const { data, isPending } = useQuery<ChartData[]>({
     queryKey: ['charts'],
     queryFn: () => getChartsDataAction(),
   })
