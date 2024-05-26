@@ -42,7 +42,7 @@ const ChartsContainer = () => {
           <Tooltip />
           <Bar
             dataKey={'count'}
-            fill={theme === 'dark' ? '#EA580C' : '#F97316'}
+            fill={theme === 'dark' ? '#3b82f6' : '#2563eb'}
             barSize={75}
           />
         </BarChart>
