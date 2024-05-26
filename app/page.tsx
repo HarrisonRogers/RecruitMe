@@ -15,10 +15,15 @@ export default function Home() {
             job <span className="text-primary">tracking</span> app
           </h1>
           <p className="leading-loose max-w-md mt-4 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti
-            accusamus rem? Atque odio, labore, aliquid consequuntur animi
-            quibusdam perferendis dolorum unde, dolore veniam voluptates. Nam
-            adipisci quisquam eaque dolor.
+            Introducing Jobify, your ultimate companion in the job search
+            journey! With Jobify, you can effortlessly add and organize the jobs
+            you have applied for, ensuring you never miss a follow-up or
+            interview. Keep a detailed record of each application, including
+            company details, job titles, and application dates. Monitor your
+            progress and stay motivated by tracking the total number of jobs you
+            have applied for. Whether you are actively job hunting or keeping
+            tabs on potential opportunities, Jobify simplifies the process,
+            helping you stay organized and focused on landing your dream job.
           </p>
           <Button asChild className="mt-4">
             <Link href={'/add-job'}>Get Started</Link>
